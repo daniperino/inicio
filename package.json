@@ -1,0 +1,22 @@
+{
+  "name": "inicio",
+  "version": "1.0.0",
+  "description": "Projeto cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniperino/cypressAlura.git"
+  },
+  "author": "Daniella Perino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniperino/cypressAlura/issues"
+  },
+  "homepage": "https://github.com/daniperino/cypressAlura#readme",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
