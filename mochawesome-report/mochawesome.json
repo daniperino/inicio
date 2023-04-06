@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-06T19:50:03.037Z",
+    "end": "2023-04-06T19:50:26.477Z",
+    "duration": 23440,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "efbd129e-4705-4734-922d-ed5555fb322d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\aluraPic\\1-mensagensDeErroNoCadastro.spec.cy.js",
+      "file": "cypress\\e2e\\aluraPic\\1-mensagensDeErroNoCadastro.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+          "title": "Mensagens de erro no cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagens de validação",
+              "fullTitle": "Mensagens de erro no cadastro Verifica mensagens de validação",
+              "timedOut": null,
+              "duration": 3144,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required!').should('be.visible');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'User name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'Password is required!').should('be.visible');\ncy.contains('ap-vmessage', 'Full name is required!').should('be.visible');",
+              "err": {},
+              "uuid": "a02e9c7b-cf6c-4055-9dfa-1ee05761ed02",
+              "parentUUID": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de email invalido",
+              "fullTitle": "Mensagens de erro no cadastro Verifica mensagem de email invalido",
+              "timedOut": null,
+              "duration": 2231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('Daniella');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "8c76726d-1d84-4861-afde-502349c48ed6",
+              "parentUUID": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de nome maior que 2 caracteres",
+              "fullTitle": "Mensagens de erro no cadastro Verifica mensagem de nome maior que 2 caracteres",
+              "timedOut": null,
+              "duration": 2149,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.get('input[formcontrolname=\"fullName\"]').type('d');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 2').should('be.visible');",
+              "err": {},
+              "uuid": "52aa62c5-6ad3-45e6-b62d-d44d11b046c9",
+              "parentUUID": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de user name deve ser em minúscula",
+              "fullTitle": "Mensagens de erro no cadastro Verifica mensagem de user name deve ser em minúscula",
+              "timedOut": null,
+              "duration": 1762,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.get('input[formcontrolname=\"userName\"]').type('Daniella');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Must be lower case').should('be.visible');",
+              "err": {},
+              "uuid": "c28cac0b-dbae-43bf-a99a-35931aa0b937",
+              "parentUUID": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de senha maior que 8 caracteres",
+              "fullTitle": "Mensagens de erro no cadastro Verifica mensagem de senha maior que 8 caracteres",
+              "timedOut": null,
+              "duration": 1417,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.get('input[formcontrolname=\"password\"]').type('1');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "58d3b609-5ae2-472d-b216-f6e19e96805e",
+              "parentUUID": "8bbb3d81-56ef-4e9e-bac0-25f48e7372c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a02e9c7b-cf6c-4055-9dfa-1ee05761ed02",
+            "8c76726d-1d84-4861-afde-502349c48ed6",
+            "52aa62c5-6ad3-45e6-b62d-d44d11b046c9",
+            "c28cac0b-dbae-43bf-a99a-35931aa0b937",
+            "58d3b609-5ae2-472d-b216-f6e19e96805e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10703,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
