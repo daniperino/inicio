@@ -1,6 +1,6 @@
 describe('Buscar um curso', () => {
   beforeEach(() => {
-    cy.visit('/');
+    cy.visit('https://www.alura.com.br/');
 
   })
   it('Buscar curso python', () => {

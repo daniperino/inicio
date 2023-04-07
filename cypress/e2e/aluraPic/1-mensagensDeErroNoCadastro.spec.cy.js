@@ -1,6 +1,6 @@
 describe('Mensagens de erro no cadastro', () => {
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com')
+        cy.visit('/')
     });
     it('Verifica mensagens de validação', () => {
       cy.contains('a', 'Register now').click() 

@@ -9,12 +9,13 @@
   }
 } 
 
+
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   projectId: '3bmqne',
   e2e: {
-    baseUrl: 'https://www.alura.com.br/'
+    baseUrl: 'https://alura-fotos.herokuapp.com'
   },
 
 });
