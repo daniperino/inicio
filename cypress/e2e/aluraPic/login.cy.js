@@ -1,4 +1,4 @@
-describe('Deve fazer login valido e invalido', () => {
+describe('Deve fazer login valido, invalido e mensagens de erro', () => {
     beforeEach(() => {
         cy.visit('/')
     });
@@ -14,4 +14,10 @@ describe('Deve fazer login valido e invalido', () => {
             expect(str).to.equal('Invalid user name or password')
         })
     });
+    it('Mensagens de erro no login', () => {
+        cy.contains('ap-vmessage','User name is required!').should('be.visible')
+        cy.contains('ap-vmessage', 'Password is required!').should('be.visible')
+    });
+
+
 });
