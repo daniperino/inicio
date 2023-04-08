@@ -19,5 +19,4 @@ describe('Deve fazer login valido, invalido e mensagens de erro', () => {
         cy.contains('ap-vmessage', 'Password is required!').should('be.visible')
     });
 
-
-});
+    });
