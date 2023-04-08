@@ -1,1 +1,20 @@
-
+[
+    {
+        "email": "rafa@rafa.com",
+        "fullName": "Rafael Vasconcelos",
+        "userName": "rafa",
+        "password": "12345678"
+    },
+    {
+        "email": "rafa2@rafa.com",
+        "fullName": "Rafael Vasconcelos2",
+        "userName": "rafa2",
+        "password": "123456789"
+    },
+    {
+        "email": "rafa3@rafa.com",
+        "fullName": "Rafael Vasconcelos3",
+        "userName": "rafa3",
+        "password": "1234567890"
+    }
+]
