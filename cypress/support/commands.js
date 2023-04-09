@@ -26,6 +26,6 @@
 
 Cypress.Commands.add('login',(nome, senha)=>{
     cy.get('input[formcontrolname="userName"]').type(nome) //sem aspas
-    cy.get('input[formcontrolname="password"]').type(senha)
+    cy.get('input[formcontrolname="password"]').type(senha, {log: false})
     cy.get('button[type="submit"]').click()
 })

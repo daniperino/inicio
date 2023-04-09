@@ -3,8 +3,8 @@ describe('Deve fazer login valido, invalido e mensagens de erro', () => {
         cy.visit('/')
     });
 
-    it('Fazer login válido', () => {
-       cy.login('flavio','123')
+    it.only('Fazer login válido', () => {
+       cy.login(Cypress.env('userName'),Cypress.env('password'))
        cy.contains('a','(Logout)').should('be.visible') 
     });
 
